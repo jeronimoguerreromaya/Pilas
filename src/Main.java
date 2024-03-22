@@ -7,13 +7,13 @@ public class Main {
         pila.push(2);
         pila.push(3);
 
-        System.out.println("Elemento en la cima: " + pila.peek()); // Imprime 3
-        System.out.println("Tamaño de la pila: " + pila.getSize()); // Imprime 3
+        System.out.println("Elemento en la cima: " + pila.peek());
+        System.out.println("Tamaño de la pila: " + pila.getSize());
 
-        int elemento = pila.pop(); // elemento = 3
+        int elemento = pila.pop();
         System.out.println("Elemento retirado: " + elemento);
 
-        pila.clear(); // Limpia la pila
-        System.out.println("Pila vacía: " + pila.isEmpty()); // Imprime trues
+        pila.clear();
+        System.out.println("Pila vacía: " + pila.isEmpty());
     }
 }
