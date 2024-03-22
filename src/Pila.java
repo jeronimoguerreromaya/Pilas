@@ -16,7 +16,7 @@ public class Pila <T>{
             this.next= null;
         }
     }
-    // Inserta un elemento en la pila
+
     public void push(T data) {
         Nodo<T> newNode = new Nodo<>(data);
         newNode.next = head;
@@ -24,7 +24,7 @@ public class Pila <T>{
         size++;
     }
 
-    // Retira el elemento en la cima de la pila
+
     public T pop() {
         if (isEmpty()) {
             throw new IllegalStateException("La pila está vacía");
@@ -35,7 +35,7 @@ public class Pila <T>{
         return data;
     }
 
-    // Obtiene el elemento en la cima de la pila
+
     public T peek() {
         if (isEmpty()) {
             throw new IllegalStateException("La pila está vacía");
@@ -43,17 +43,17 @@ public class Pila <T>{
         return head.data;
     }
 
-    // Verifica si la pila está vacía
+
     public boolean isEmpty() {
         return size == 0;
     }
 
-    // Obtiene el tamaño de la pila
+
     public int getSize() {
         return size;
     }
 
-    // Limpia la pila
+
     public void clear() {
         head = null;
         size = 0;
